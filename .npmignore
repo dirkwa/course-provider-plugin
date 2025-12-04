@@ -1,6 +1,19 @@
-package-lock.json
-package.json
-/src
+# Source files - not needed for runtime
+assembly/
+src/
+asconfig.json
 tsconfig.json
-.prettierrc.json
+package-lock.json
 
+# Dev/build artifacts
+node_modules/
+*.tgz
+*.debug.wasm
+
+# Generated JS files (keep only .wasm)
+build/*.js
+build/*.d.ts
+plugin/
+
+# Old Node.js specific files
+.prettierrc.json
